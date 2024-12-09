@@ -6,6 +6,8 @@ const api = document.getElementById("result");
 const errorFetched = document.getElementById("error");
 const checkBox = document.getElementById("checkbox");
 
+// FORM VALIDATIOPN START
+
 btn.addEventListener("click", (e) => {
   e.preventDefault();
   if (userName.value === "" || userEmail.value === "" || userPassword === "") {
@@ -49,3 +51,5 @@ btn.addEventListener("click", (e) => {
     }, 10000);
   }
 });
+
+// FORM VALIDATION END

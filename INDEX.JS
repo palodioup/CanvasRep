@@ -53,10 +53,3 @@ btn.addEventListener("click", (e) => {
 });
 
 // FORM VALIDATION END
-
-// Apply Button Code
-
-applyButton.addEventListener("click", (e) => {
-  e.preventDefault()
-  
-})

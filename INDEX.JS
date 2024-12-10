@@ -5,7 +5,7 @@ const userPassword = document.getElementById("password");
 const api = document.getElementById("result");
 const errorFetched = document.getElementById("error");
 const checkBox = document.getElementById("checkbox");
-
+const applyButton = document.getElementById("apply-btn")
 // FORM VALIDATIOPN START
 
 btn.addEventListener("click", (e) => {
@@ -38,7 +38,7 @@ btn.addEventListener("click", (e) => {
     api.innerHTML = "";
     errorFetched.innerHTML = "Password to long.";
   } else {
-    api.innerHTML = `<h1>HELLO ${userName.value}</h1>`;
+    api.innerHTML = `<h1>HELLO ${userName.value}! Thanks folr joining us!</h1>`;
     alert("Hello " + `${userName.value}` + " ! Welcome to DipCom MULTINATIONAL. Let's get started")
     errorFetched.innerHTML = "";
 
@@ -53,3 +53,10 @@ btn.addEventListener("click", (e) => {
 });
 
 // FORM VALIDATION END
+
+// Apply Button Code
+
+applyButton.addEventListener("click", (e) => {
+  e.preventDefault()
+  
+})

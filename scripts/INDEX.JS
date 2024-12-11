@@ -2,12 +2,12 @@
 // COPYRIGHT (C) DIPCOM MULTINATIONAL 2024
 // JAVASCRIPT
 
-import { btn } from "./CLASSES.JS";
-import { userName } from "./CLASSES.JS";
-import { userEmail } from "./CLASSES.JS";
-import { userPassword } from "./CLASSES.JS";
-import { api } from "./CLASSES.JS";
-import { errorFetched } from "./CLASSES.JS";
+import { btn } from "../scripts/data/CLASSES.JS";
+import { userName } from "../scripts/data/CLASSES.JS";
+import { userEmail } from "../scripts/data/CLASSES.JS";
+import { userPassword } from "../scripts/data/CLASSES.JS";
+import { api } from "../scripts/data/CLASSES.JS";
+import { errorFetched } from "../scripts/data/CLASSES.JS";
 
 // FORM VALIDATIOPN START
 

@@ -1,3 +1,7 @@
+// DIPCOM MULTINATIONAL OFFICIAL WEBSITE
+// COPYRIGHT (C) DIPCOM MULTINATIONAL 2024
+// JAVASCRIPT
+
 const btn = document.getElementById("event");
 const userName = document.getElementById("name");
 const userEmail = document.getElementById("email");

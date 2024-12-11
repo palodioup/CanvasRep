@@ -1,0 +1,1 @@
+This repository is a yet-to-be-finished, scalable website of future company, DipCom Multinational. I consists of just the introductory area and sign-in box but before March 2025, It will be completed and deployed to the web.

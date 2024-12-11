@@ -41,15 +41,14 @@ btn.addEventListener("click", (e) => {
     api.innerHTML = `<h1>HELLO ${userName.value}! Thanks folr joining us!</h1>`;
     alert("Hello " + `${userName.value}` + " ! Welcome to DipCom MULTINATIONAL. Let's get started")
     errorFetched.innerHTML = "";
-
-    setTimeout(() => {
-      userName.value = "";
-      userEmail.value = "";
-      userPassword.value = "";
-      api.innerHTML = "";
-      errorFetched.innerHTML = "";
-    }, 10000);
   }
+  setTimeout(() => {
+    userName.value = "";
+    userEmail.value = "";
+    userPassword.value = "";
+    api.innerHTML = "";
+    errorFetched.innerHTML = "";
+  }, 10000);
 });
 
 // FORM VALIDATION END

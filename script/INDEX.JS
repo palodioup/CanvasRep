@@ -23,14 +23,14 @@ btn.addEventListener("click", (e) => {
     api.innerHTML = "";
     errorFetched.innerHTML = "Password to long.";
   } else {
-    api.innerHTML = `<h1>HELLO ${userName.value}! Thanks folr joining us!</h1>`;
+    api.innerHTML = `<h1>HELLO ${userName.value}! Thanks for joining us!</h1>`;
     alert(
       "Hello " +
         `${userName.value}` +
         " ! Welcome to DipCom MULTINATIONAL. Let's get started"
     );
     errorFetched.innerHTML = "";
-    let text = "Hello" + `${userName.value}, ${userEmail.value}, ${userPassword.value}`
+    let text = "Hello " + `${userName.value}, ${userEmail.value}, ${userPassword.value}`
     function func_savedata(data) {
       var string_data = data;
       var file = new File([string_data], "user.txt", {
@@ -55,7 +55,3 @@ btn.addEventListener("click", (e) => {
 });
 
 // FORM VALIDATION END
-
-// Profile Download start
-
-// Profile download end

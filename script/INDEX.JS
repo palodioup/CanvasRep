@@ -2,12 +2,12 @@
 // COPYRIGHT (C) DIPCOM MULTINATIONAL 2024
 // JAVASCRIPT
 
-import { btn } from "../scripts/data/CLASSES.JS";
-import { userName } from "../scripts/data/CLASSES.JS";
-import { userEmail } from "../scripts/data/CLASSES.JS";
-import { userPassword } from "../scripts/data/CLASSES.JS";
-import { api } from "../scripts/data/CLASSES.JS";
-import { errorFetched } from "../scripts/data/CLASSES.JS";
+import { btn } from "../script/data/CLASSES.JS";
+import { userName } from "../script/data/CLASSES.JS";
+import { userEmail } from "../script/data/CLASSES.JS";
+import { userPassword } from "../script/data/CLASSES.JS";
+import { api } from "../script/data/CLASSES.JS";
+import { errorFetched } from "../script/data/CLASSES.JS";
 
 // FORM VALIDATIOPN START
 
@@ -16,13 +16,13 @@ btn.addEventListener("click", (e) => {
   if (userName.value === "" || userEmail.value === "" || userPassword === "") {
     api.innerHTML = "";
     errorFetched.innerHTML = "Name, email and password are required";
-  } else if (userName.value === "") {
+  } else if (userName.value === "") { 
     api.innerHTML = "";
     errorFetched.innerHTML = "Name is required";
   } else if (userEmail.value === "") {
     api.innerHTML = "";
     errorFetched.innerHTML = "Email is required";
-  } else if (userPassword === "") {
+  } else if (userPassword === "") { 
     api.innerHTML = "";
     errorFetched.innerHTML = "Password is required";
   } else if (userName.value === "" && userEmail.value === "") {
@@ -42,11 +42,7 @@ btn.addEventListener("click", (e) => {
     errorFetched.innerHTML = "Password to long.";
   } else {
     api.innerHTML = `<h1>HELLO ${userName.value}! Thanks folr joining us!</h1>`;
-    alert(
-      "Hello " +
-        `${userName.value}` +
-        " ! Welcome to DipCom MULTINATIONAL. Let's get started"
-    );
+    alert("Hello " + `${userName.value}` + " ! Welcome to DipCom MULTINATIONAL. Let's get started")
     errorFetched.innerHTML = "";
   }
   setTimeout(() => {

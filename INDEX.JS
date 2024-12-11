@@ -2,14 +2,13 @@
 // COPYRIGHT (C) DIPCOM MULTINATIONAL 2024
 // JAVASCRIPT
 
-const btn = document.getElementById("event");
-const userName = document.getElementById("name");
-const userEmail = document.getElementById("email");
-const userPassword = document.getElementById("password");
-const api = document.getElementById("result");
-const errorFetched = document.getElementById("error");
-const checkBox = document.getElementById("checkbox");
-const applyButton = document.getElementById("apply-btn")
+import { btn } from "./CLASSES.JS";
+import { userName } from "./CLASSES.JS";
+import { userEmail } from "./CLASSES.JS";
+import { userPassword } from "./CLASSES.JS";
+import { api } from "./CLASSES.JS";
+import { errorFetched } from "./CLASSES.JS";
+
 // FORM VALIDATIOPN START
 
 btn.addEventListener("click", (e) => {

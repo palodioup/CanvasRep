@@ -16,13 +16,13 @@ btn.addEventListener("click", (e) => {
   if (userName.value === "" || userEmail.value === "" || userPassword === "") {
     api.innerHTML = "";
     errorFetched.innerHTML = "Name, email and password are required";
-  } else if (userName.value === "") { 
+  } else if (userName.value === "") {
     api.innerHTML = "";
     errorFetched.innerHTML = "Name is required";
   } else if (userEmail.value === "") {
     api.innerHTML = "";
     errorFetched.innerHTML = "Email is required";
-  } else if (userPassword === "") { 
+  } else if (userPassword === "") {
     api.innerHTML = "";
     errorFetched.innerHTML = "Password is required";
   } else if (userName.value === "" && userEmail.value === "") {
@@ -42,7 +42,11 @@ btn.addEventListener("click", (e) => {
     errorFetched.innerHTML = "Password to long.";
   } else {
     api.innerHTML = `<h1>HELLO ${userName.value}! Thanks folr joining us!</h1>`;
-    alert("Hello " + `${userName.value}` + " ! Welcome to DipCom MULTINATIONAL. Let's get started")
+    alert(
+      "Hello " +
+        `${userName.value}` +
+        " ! Welcome to DipCom MULTINATIONAL. Let's get started"
+    );
     errorFetched.innerHTML = "";
   }
   setTimeout(() => {

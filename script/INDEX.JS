@@ -16,24 +16,6 @@ btn.addEventListener("click", (e) => {
   if (userName.value === "" || userEmail.value === "" || userPassword === "") {
     api.innerHTML = "";
     errorFetched.innerHTML = "Name, email and password are required";
-  } else if (userName.value === "") { 
-    api.innerHTML = "";
-    errorFetched.innerHTML = "Name is required";
-  } else if (userEmail.value === "") {
-    api.innerHTML = "";
-    errorFetched.innerHTML = "Email is required";
-  } else if (userPassword === "") { 
-    api.innerHTML = "";
-    errorFetched.innerHTML = "Password is required";
-  } else if (userName.value === "" && userEmail.value === "") {
-    api.innerHTML = "";
-    errorFetched.innerHTML = "Name and email are required";
-  } else if (userName.value === "" && userPassword.value === "") {
-    api.innerHTML = "";
-    errorFetched.innerHTML = "Name and password are required";
-  } else if (userEmail.value === "" && userPassword.value === "") {
-    api.innerHTML = "";
-    errorFetched.innerHTML = "Email and password are required";
   } else if (userPassword.value.length <= 9) {
     api.innerHTML = "";
     errorFetched.innerHTML = "Password to short.";
